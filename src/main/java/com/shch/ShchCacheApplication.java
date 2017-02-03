@@ -21,9 +21,7 @@ public class ShchCacheApplication {
 		//ParaCacheDemo demo=(ParaCacheDemo) ctx.getBean("demo");
 		//demo.printInfo();
 		
-		System.out.println("Debug1");
 		 ctx=new ClassPathXmlApplicationContext("applicationContext.xml");
-		 System.out.println("Debug2");
 
 	    //ApplicationContext ctx=SpringApplication.run(ShchCacheApplication.class, args);
 		CacheDemo cacheDemo=(CacheDemo) ctx.getBean("cacheDemo");

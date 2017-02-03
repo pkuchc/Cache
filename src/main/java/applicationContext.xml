@@ -104,7 +104,7 @@
  <bean id="cacheScheduleUpdateJob1" class="com.shch.cache.update.CacheScheduleUpdateJob1" init-method="updateCache"></bean>
 
      <!-- prototype类型，每次调用该Bean时，都会创建一个新的实例  -->
-<bean id="cacheUpdateThread" class="com.shch.cache.update.CacheUpdateThread" scope="prototype"> </bean>
+<!--  <bean id="cacheUpdateThread" class="com.shch.cache.update.CacheUpdateThread" scope="prototype"> </bean> -->
 
 <bean id="stringSplitter" class="com.shch.cache.support.StringSplitter"></bean>
 
