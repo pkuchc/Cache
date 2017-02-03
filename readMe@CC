@@ -1,0 +1,4 @@
+（一）纯Spring框架，没有用Spring Boot的自动装配等高级功能，Bean之间的连接用纯XML配置
+（二）配置文件application.properties的读取有两种方式：
+     1.纯File文件读取方式，有ReadProperty类实现；
+     2.利用Spring框架@Value注解读取配置文件，并生成一个实体对象类，由CacheSetting类实现

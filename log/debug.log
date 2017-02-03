@@ -1,0 +1,408 @@
+2017-01-03 17:22:34  [ main:43 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:34  [ main:43 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:34  [ main:43 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:34  [ main:43 ] - [ DEBUG ]  执行方法体，num的值：2
+2017-01-03 17:22:34  [ main:43 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2017-01-03 17:22:34  [ main:44 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-03 17:22:34  [ main:44 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-03 17:22:34  [ main:44 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:34  [ main:44 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:34  [ main:44 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:34  [ main:44 ] - [ DEBUG ]  执行方法体，num的值：3
+2017-01-03 17:22:34  [ main:44 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2017-01-03 17:22:34  [ main:45 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-03 17:22:34  [ main:45 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-03 17:22:34  [ main:45 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:34  [ main:45 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:34  [ main:45 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:34  [ main:45 ] - [ DEBUG ]  执行方法体，num的值：4
+2017-01-03 17:22:34  [ main:45 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2017-01-03 17:22:34  [ main:45 ] - [ INFO ]  执行testCacheEvict()方法
+2017-01-03 17:22:34  [ main:45 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheEvict
+2017-01-03 17:22:34  [ main:46 ] - [ DEBUG ]  拦截方法的注解CacheEvict指定缓存的key：stock.info
+2017-01-03 17:22:34  [ main:46 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:34  [ main:46 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:34  [ main:46 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:34  [ main:46 ] - [ DEBUG ]  执行方法体，num的值：5
+2017-01-03 17:22:34  [ main:46 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-03 17:22:34  [ main:46 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-03 17:22:34  [ main:46 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:34  [ main:47 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:34  [ main:47 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:34  [ main:47 ] - [ DEBUG ]  执行方法体，num的值：6
+2017-01-03 17:22:34  [ main:47 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2017-01-03 17:22:34  [ main:47 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable1
+2017-01-03 17:22:34  [ main:47 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：clear.info
+2017-01-03 17:22:34  [ main:47 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.clear    属性名：clear
+2017-01-03 17:22:34  [ main:47 ] - [ DEBUG ]  properties文件key--clear    value--concurrentHashMap2
+2017-01-03 17:22:34  [ main:47 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap2
+2017-01-03 17:22:34  [ main:48 ] - [ DEBUG ]  执行方法体，num的值：7
+2017-01-03 17:22:34  [ main:48 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2017-01-03 17:22:53  [ main:0 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-03 17:22:53  [ main:1 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-03 17:22:53  [ main:2 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:53  [ main:2 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:53  [ main:2 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:53  [ main:13 ] - [ DEBUG ]  执行方法体，num的值：1
+2017-01-03 17:22:53  [ main:13 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2017-01-03 17:22:53  [ main:13 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-03 17:22:53  [ main:14 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-03 17:22:53  [ main:14 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:53  [ main:14 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:53  [ main:14 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:53  [ main:14 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2017-01-03 17:22:53  [ main:14 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-03 17:22:53  [ main:15 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-03 17:22:53  [ main:15 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:53  [ main:15 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:53  [ main:16 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:53  [ main:16 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2017-01-03 17:22:53  [ main:16 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-03 17:22:53  [ main:16 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-03 17:22:53  [ main:16 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:53  [ main:16 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:53  [ main:16 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:53  [ main:17 ] - [ DEBUG ]  执行方法体，num的值：2
+2017-01-03 17:22:53  [ main:17 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2017-01-03 17:22:53  [ main:17 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-03 17:22:53  [ main:17 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-03 17:22:53  [ main:17 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:53  [ main:17 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:53  [ main:17 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:53  [ main:17 ] - [ DEBUG ]  执行方法体，num的值：3
+2017-01-03 17:22:53  [ main:18 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2017-01-03 17:22:53  [ main:18 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-03 17:22:53  [ main:18 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-03 17:22:53  [ main:18 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:53  [ main:18 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:53  [ main:18 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:53  [ main:18 ] - [ DEBUG ]  执行方法体，num的值：4
+2017-01-03 17:22:53  [ main:19 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2017-01-03 17:22:53  [ main:19 ] - [ INFO ]  执行testCacheEvict()方法
+2017-01-03 17:22:53  [ main:19 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheEvict
+2017-01-03 17:22:53  [ main:19 ] - [ DEBUG ]  拦截方法的注解CacheEvict指定缓存的key：stock.info
+2017-01-03 17:22:53  [ main:19 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:53  [ main:19 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:53  [ main:19 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:53  [ main:19 ] - [ DEBUG ]  执行方法体，num的值：5
+2017-01-03 17:22:53  [ main:20 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-03 17:22:53  [ main:20 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-03 17:22:53  [ main:20 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.stock    属性名：stock
+2017-01-03 17:22:53  [ main:20 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:22:53  [ main:20 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:22:53  [ main:20 ] - [ DEBUG ]  执行方法体，num的值：6
+2017-01-03 17:22:53  [ main:21 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2017-01-03 17:22:53  [ main:21 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable1
+2017-01-03 17:22:53  [ main:21 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：clear.info
+2017-01-03 17:22:53  [ main:21 ] - [ DEBUG ]  通过反射得到的属性为：public java.lang.String com.shch.cache.mapping.CacheSettings.clear    属性名：clear
+2017-01-03 17:22:53  [ main:21 ] - [ DEBUG ]  properties文件key--clear    value--concurrentHashMap2
+2017-01-03 17:22:53  [ main:21 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap2
+2017-01-03 17:22:53  [ main:21 ] - [ DEBUG ]  执行方法体，num的值：7
+2017-01-03 17:22:53  [ main:22 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2017-01-03 17:26:42  [ main:0 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-03 17:26:42  [ main:1 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-03 17:26:42  [ main:2 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-03 17:26:42  [ main:2 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:26:42  [ main:3 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:26:42  [ main:14 ] - [ DEBUG ]  执行方法体，num的值：1
+2017-01-03 17:26:42  [ main:14 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2017-01-03 17:26:42  [ main:14 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-03 17:26:42  [ main:15 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-03 17:26:42  [ main:15 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-03 17:26:42  [ main:15 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:26:42  [ main:15 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:26:42  [ main:15 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2017-01-03 17:26:42  [ main:15 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-03 17:26:42  [ main:16 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-03 17:26:42  [ main:16 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-03 17:26:42  [ main:16 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:26:42  [ main:17 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:26:42  [ main:17 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2017-01-03 17:26:42  [ main:17 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-03 17:26:42  [ main:17 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-03 17:26:42  [ main:17 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-03 17:26:42  [ main:17 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:26:42  [ main:17 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:26:42  [ main:17 ] - [ DEBUG ]  执行方法体，num的值：2
+2017-01-03 17:26:42  [ main:18 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2017-01-03 17:26:42  [ main:18 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-03 17:26:42  [ main:18 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-03 17:26:42  [ main:18 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-03 17:26:42  [ main:18 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:26:42  [ main:18 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:26:42  [ main:18 ] - [ DEBUG ]  执行方法体，num的值：3
+2017-01-03 17:26:42  [ main:18 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2017-01-03 17:26:42  [ main:19 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-03 17:26:42  [ main:19 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-03 17:26:42  [ main:19 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-03 17:26:42  [ main:19 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:26:42  [ main:19 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:26:42  [ main:19 ] - [ DEBUG ]  执行方法体，num的值：4
+2017-01-03 17:26:42  [ main:19 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2017-01-03 17:26:42  [ main:19 ] - [ INFO ]  执行testCacheEvict()方法
+2017-01-03 17:26:42  [ main:20 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheEvict
+2017-01-03 17:26:42  [ main:20 ] - [ DEBUG ]  拦截方法的注解CacheEvict指定缓存的key：stock.info
+2017-01-03 17:26:42  [ main:20 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-03 17:26:42  [ main:20 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:26:42  [ main:20 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:26:42  [ main:20 ] - [ DEBUG ]  执行方法体，num的值：5
+2017-01-03 17:26:42  [ main:20 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-03 17:26:42  [ main:20 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-03 17:26:42  [ main:21 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-03 17:26:42  [ main:21 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-03 17:26:42  [ main:21 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-03 17:26:42  [ main:21 ] - [ DEBUG ]  执行方法体，num的值：6
+2017-01-03 17:26:42  [ main:21 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2017-01-03 17:26:42  [ main:21 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable1
+2017-01-03 17:26:42  [ main:21 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：clear.info
+2017-01-03 17:26:42  [ main:21 ] - [ DEBUG ]  通过反射得到的属性名：clear   值为：concurrentHashMap2
+2017-01-03 17:26:42  [ main:22 ] - [ DEBUG ]  properties文件key--clear    value--concurrentHashMap2
+2017-01-03 17:26:42  [ main:22 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap2
+2017-01-03 17:26:42  [ main:22 ] - [ DEBUG ]  执行方法体，num的值：7
+2017-01-03 17:26:42  [ main:22 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2017-01-04 09:10:41  [ main:0 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:10:41  [ main:1 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:10:41  [ main:2 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:10:41  [ main:3 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:10:41  [ main:3 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:10:41  [ main:14 ] - [ DEBUG ]  执行方法体，num的值：1
+2017-01-04 09:10:41  [ main:14 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2017-01-04 09:10:41  [ main:33 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:10:41  [ main:33 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:10:41  [ main:33 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:10:41  [ main:33 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:10:41  [ main:33 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:10:41  [ main:33 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2017-01-04 09:10:41  [ main:34 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:10:41  [ main:34 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:10:41  [ main:34 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:10:41  [ main:35 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:10:41  [ main:35 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:10:41  [ main:35 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2017-01-04 09:10:41  [ main:35 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:10:41  [ main:35 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:10:41  [ main:35 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:10:41  [ main:35 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:10:41  [ main:35 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:10:41  [ main:36 ] - [ DEBUG ]  执行方法体，num的值：2
+2017-01-04 09:10:41  [ main:36 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2017-01-04 09:10:41  [ main:36 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:10:41  [ main:36 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:10:41  [ main:36 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:10:41  [ main:36 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:10:41  [ main:36 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:10:41  [ main:36 ] - [ DEBUG ]  执行方法体，num的值：3
+2017-01-04 09:10:41  [ main:37 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2017-01-04 09:10:41  [ main:37 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:10:41  [ main:37 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:10:41  [ main:37 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:10:41  [ main:37 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:10:41  [ main:37 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:10:41  [ main:37 ] - [ DEBUG ]  执行方法体，num的值：4
+2017-01-04 09:10:41  [ main:37 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2017-01-04 09:10:41  [ main:37 ] - [ INFO ]  执行testCacheEvict()方法
+2017-01-04 09:10:41  [ main:38 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheEvict
+2017-01-04 09:10:41  [ main:38 ] - [ DEBUG ]  拦截方法的注解CacheEvict指定缓存的key：stock.info
+2017-01-04 09:10:41  [ main:38 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:10:41  [ main:38 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:10:41  [ main:38 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:10:41  [ main:38 ] - [ DEBUG ]  执行方法体，num的值：5
+2017-01-04 09:10:41  [ main:38 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:10:41  [ main:38 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:10:41  [ main:39 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:10:41  [ main:39 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:10:41  [ main:39 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:10:41  [ main:39 ] - [ DEBUG ]  执行方法体，num的值：6
+2017-01-04 09:10:41  [ main:39 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2017-01-04 09:10:41  [ main:39 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable1
+2017-01-04 09:10:41  [ main:39 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：clear.info
+2017-01-04 09:10:41  [ main:39 ] - [ DEBUG ]  通过反射得到的属性名：clear   值为：concurrentHashMap2
+2017-01-04 09:10:41  [ main:40 ] - [ DEBUG ]  properties文件key--clear    value--concurrentHashMap2
+2017-01-04 09:10:41  [ main:40 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap2
+2017-01-04 09:10:41  [ main:40 ] - [ DEBUG ]  执行方法体，num的值：7
+2017-01-04 09:10:41  [ main:40 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2017-01-04 09:11:14  [ main:0 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:11:14  [ main:0 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:11:14  [ main:1 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:11:14  [ main:1 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:11:14  [ main:1 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:11:14  [ main:11 ] - [ DEBUG ]  执行方法体，num的值：1
+2017-01-04 09:11:14  [ main:11 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2017-01-04 09:11:14  [ main:13 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:11:14  [ main:13 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:11:14  [ main:13 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:11:14  [ main:13 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:11:14  [ main:13 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:11:14  [ main:13 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2017-01-04 09:11:14  [ main:13 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:11:14  [ main:13 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:11:14  [ main:13 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:11:14  [ main:13 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:11:14  [ main:13 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:11:14  [ main:13 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  执行方法体，num的值：2
+2017-01-04 09:11:14  [ main:14 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  执行方法体，num的值：3
+2017-01-04 09:11:14  [ main:14 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2017-01-04 09:11:14  [ main:14 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  执行方法体，num的值：4
+2017-01-04 09:11:14  [ main:15 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2017-01-04 09:11:14  [ main:15 ] - [ INFO ]  执行testCacheEvict()方法
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheEvict
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  拦截方法的注解CacheEvict指定缓存的key：stock.info
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  执行方法体，num的值：5
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:11:14  [ main:15 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:11:14  [ main:16 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:11:14  [ main:16 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:11:14  [ main:16 ] - [ DEBUG ]  执行方法体，num的值：6
+2017-01-04 09:11:14  [ main:16 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2017-01-04 09:11:14  [ main:17 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable1
+2017-01-04 09:11:14  [ main:17 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：clear.info
+2017-01-04 09:11:14  [ main:17 ] - [ DEBUG ]  通过反射得到的属性名：clear   值为：concurrentHashMap2
+2017-01-04 09:11:14  [ main:17 ] - [ DEBUG ]  properties文件key--clear    value--concurrentHashMap2
+2017-01-04 09:11:14  [ main:17 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap2
+2017-01-04 09:11:14  [ main:17 ] - [ DEBUG ]  执行方法体，num的值：7
+2017-01-04 09:11:14  [ main:17 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2017-01-04 09:14:41  [ main:0 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:14:41  [ main:0 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:14:41  [ main:0 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:14:41  [ main:0 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:14:41  [ main:1 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:14:41  [ main:11 ] - [ DEBUG ]  执行方法体，num的值：1
+2017-01-04 09:14:41  [ main:11 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2017-01-04 09:14:41  [ main:12 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:14:41  [ main:13 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:14:41  [ main:13 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:14:41  [ main:13 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:14:41  [ main:13 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:14:41  [ main:13 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2017-01-04 09:14:41  [ main:13 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:14:41  [ main:13 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:14:41  [ main:13 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:14:41  [ main:13 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:14:41  [ main:13 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:14:41  [ main:13 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  执行方法体，num的值：2
+2017-01-04 09:14:41  [ main:14 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  执行方法体，num的值：3
+2017-01-04 09:14:41  [ main:14 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2017-01-04 09:14:41  [ main:14 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:14:41  [ main:15 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:14:41  [ main:15 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:14:41  [ main:15 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:14:41  [ main:15 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:14:41  [ main:15 ] - [ DEBUG ]  执行方法体，num的值：4
+2017-01-04 09:14:41  [ main:15 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2017-01-04 09:14:41  [ main:15 ] - [ INFO ]  执行testCacheEvict()方法
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheEvict
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  拦截方法的注解CacheEvict指定缓存的key：stock.info
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  执行方法体，num的值：5
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:14:41  [ main:16 ] - [ DEBUG ]  执行方法体，num的值：6
+2017-01-04 09:14:41  [ main:16 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2017-01-04 09:14:41  [ main:17 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable1
+2017-01-04 09:14:41  [ main:17 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：clear.info
+2017-01-04 09:14:41  [ main:17 ] - [ DEBUG ]  通过反射得到的属性名：clear   值为：concurrentHashMap2
+2017-01-04 09:14:41  [ main:17 ] - [ DEBUG ]  properties文件key--clear    value--concurrentHashMap2
+2017-01-04 09:14:41  [ main:17 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap2
+2017-01-04 09:14:41  [ main:17 ] - [ DEBUG ]  执行方法体，num的值：7
+2017-01-04 09:14:41  [ main:17 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2017-01-04 09:15:14  [ main:0 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:15:14  [ main:0 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:16:25  [ main:0 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:16:25  [ main:0 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:16:25  [ main:0 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:16:25  [ main:0 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:16:25  [ main:0 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:16:25  [ main:11 ] - [ DEBUG ]  执行方法体，num的值：1
+2017-01-04 09:16:25  [ main:11 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2017-01-04 09:16:25  [ main:13 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:16:25  [ main:13 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:16:25  [ main:13 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:16:25  [ main:13 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:16:25  [ main:13 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:16:25  [ main:13 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2017-01-04 09:16:25  [ main:13 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:16:25  [ main:13 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:16:25  [ main:14 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:16:25  [ main:14 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:16:25  [ main:14 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:16:25  [ main:14 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2017-01-04 09:16:25  [ main:14 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:16:25  [ main:14 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:16:25  [ main:14 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:16:25  [ main:14 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:16:25  [ main:14 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:16:25  [ main:14 ] - [ DEBUG ]  执行方法体，num的值：2
+2017-01-04 09:16:25  [ main:14 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2017-01-04 09:16:25  [ main:14 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:16:25  [ main:14 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  执行方法体，num的值：3
+2017-01-04 09:16:25  [ main:15 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCachePut
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  拦截方法的注解CachePut指定缓存的key：stock.info
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  执行方法体，num的值：4
+2017-01-04 09:16:25  [ main:15 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2017-01-04 09:16:25  [ main:15 ] - [ INFO ]  执行testCacheEvict()方法
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheEvict
+2017-01-04 09:16:25  [ main:15 ] - [ DEBUG ]  拦截方法的注解CacheEvict指定缓存的key：stock.info
+2017-01-04 09:16:25  [ main:16 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:16:25  [ main:16 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:16:25  [ main:16 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:16:25  [ main:16 ] - [ DEBUG ]  执行方法体，num的值：5
+2017-01-04 09:16:25  [ main:16 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable
+2017-01-04 09:16:25  [ main:16 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：stock.info
+2017-01-04 09:16:25  [ main:16 ] - [ DEBUG ]  通过反射得到的属性名：stock   值为：concurrentHashMap1
+2017-01-04 09:16:25  [ main:16 ] - [ DEBUG ]  properties文件key--stock    value--concurrentHashMap1
+2017-01-04 09:16:25  [ main:16 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap1
+2017-01-04 09:16:25  [ main:16 ] - [ DEBUG ]  执行方法体，num的值：6
+2017-01-04 09:16:25  [ main:16 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2017-01-04 09:16:25  [ main:17 ] - [ DEBUG ]  Aop拦截的对象是：class--com.shch.CacheDemo method--testCacheable1
+2017-01-04 09:16:25  [ main:17 ] - [ DEBUG ]  拦截方法的注解Cacheable指定缓存的key：clear.info
+2017-01-04 09:16:25  [ main:17 ] - [ DEBUG ]  通过反射得到的属性名：clear   值为：concurrentHashMap2
+2017-01-04 09:16:25  [ main:17 ] - [ DEBUG ]  properties文件key--clear    value--concurrentHashMap2
+2017-01-04 09:16:25  [ main:17 ] - [ DEBUG ]  Cache实例的名字：concurrentHashMap2
+2017-01-04 09:16:25  [ main:17 ] - [ DEBUG ]  执行方法体，num的值：7
+2017-01-04 09:16:25  [ main:17 ] - [ INFO ]  执行testCacheable1()方法的结果为：7

@@ -1,0 +1,111 @@
+2016-12-30 13:24:42  [ main:0 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 13:52:25  [ main:1 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 13:52:59  [ main:0 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 14:28:20  [ main:1 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 14:29:09  [ main:2 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 14:35:56  [ main:1 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 14:38:42  [ main:2 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 14:39:53  [ main:1 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 14:54:15  [ main:1 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 17:06:25  [ main:15 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 17:10:21  [ main:16 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 17:13:28  [ main:15 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 17:14:21  [ main:16 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 17:17:10  [ main:0 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:17:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:17:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:17:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:17:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:17:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:17:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:17:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:17:10  [ main:15 ] - [ INFO ]  properties文件key--clear    value--concurrentHashMap2
+2016-12-30 17:17:10  [ main:15 ] - [ INFO ]  INFO:just test log info!
+2016-12-30 17:20:12  [ main:0 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  执行方法体，num的值：1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  执行方法体，num的值：2
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  执行方法体，num的值：3
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  执行方法体，num的值：4
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  执行testCacheEvict()方法
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  执行方法体，num的值：5
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  执行方法体，num的值：6
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  properties文件key--clear    value--concurrentHashMap2
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  执行方法体，num的值：7
+2016-12-30 17:20:12  [ main:15 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2016-12-30 17:21:10  [ main:0 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  执行testCacheEvict()方法
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  properties文件key--stock    value--concurrentHashMap1
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  properties文件key--clear    value--concurrentHashMap2
+2016-12-30 17:21:10  [ main:15 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2016-12-30 17:21:45  [ main:0 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2016-12-30 17:21:45  [ main:0 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2016-12-30 17:21:45  [ main:0 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2016-12-30 17:21:45  [ main:0 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2016-12-30 17:21:45  [ main:0 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2016-12-30 17:21:45  [ main:0 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2016-12-30 17:21:45  [ main:0 ] - [ INFO ]  执行testCacheEvict()方法
+2016-12-30 17:21:45  [ main:0 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2016-12-30 17:21:45  [ main:0 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2016-12-30 18:17:14  [ main:16 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2016-12-30 18:17:14  [ main:16 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2016-12-30 18:17:14  [ main:16 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2016-12-30 18:17:14  [ main:16 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2016-12-30 18:17:14  [ main:16 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2016-12-30 18:17:14  [ main:16 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2016-12-30 18:17:14  [ main:16 ] - [ INFO ]  执行testCacheEvict()方法
+2016-12-30 18:17:14  [ main:16 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2016-12-30 18:17:14  [ main:16 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2016-12-30 18:31:16  [ main:16 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2016-12-30 18:31:16  [ main:16 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2016-12-30 18:31:16  [ main:16 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2016-12-30 18:31:16  [ main:16 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2016-12-30 18:31:16  [ main:16 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2016-12-30 18:31:16  [ main:16 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2016-12-30 18:31:16  [ main:16 ] - [ INFO ]  执行testCacheEvict()方法
+2016-12-30 18:31:16  [ main:16 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2016-12-30 18:31:16  [ main:16 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2016-12-30 18:32:05  [ main:0 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2016-12-30 18:32:05  [ main:0 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2016-12-30 18:32:05  [ main:0 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2016-12-30 18:32:05  [ main:0 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2016-12-30 18:32:05  [ main:16 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2016-12-30 18:32:05  [ main:16 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2016-12-30 18:32:05  [ main:16 ] - [ INFO ]  执行testCacheEvict()方法
+2016-12-30 18:32:05  [ main:16 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2016-12-30 18:32:05  [ main:16 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
+2016-12-30 18:39:41  [ main:16 ] - [ INFO ]  第1次执行testCacheable()方法的结果为：1
+2016-12-30 18:39:41  [ main:16 ] - [ INFO ]  第2次执行testCacheable()方法的结果为：1
+2016-12-30 18:39:41  [ main:16 ] - [ INFO ]  第3次执行testCacheable()方法的结果为：1
+2016-12-30 18:39:41  [ main:16 ] - [ INFO ]  第1次执行testCachePut()方法的结果为：2
+2016-12-30 18:39:41  [ main:16 ] - [ INFO ]  第2次执行testCachePut()方法的结果为：3
+2016-12-30 18:39:41  [ main:16 ] - [ INFO ]  第3次执行testCachePut()方法的结果为：4
+2016-12-30 18:39:41  [ main:16 ] - [ INFO ]  执行testCacheEvict()方法
+2016-12-30 18:39:41  [ main:16 ] - [ INFO ]  再次执行testCacheable()方法的结果为：6
+2016-12-30 18:39:41  [ main:16 ] - [ INFO ]  执行testCacheable1()方法的结果为：7
