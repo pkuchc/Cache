@@ -21,6 +21,11 @@ public class CacheScheduleUpdate2 implements ICacheScheduleUpdate{ //用户需�
     	return "clear.info";
     }
 	@Override
+	public Object GetCron() {
+		// TODO Auto-generated method stub
+		return "0/3 * * * * ?";
+	}
+	@Override
 	public boolean IsNeedUpdated(ICacheOperation cacheOperation, Object key) {
 		// TODO Auto-generated method stub
 		boolean isSame=true;
@@ -34,5 +39,6 @@ public class CacheScheduleUpdate2 implements ICacheScheduleUpdate{ //用户需�
 		logger.info("是否需要更新缓存："+isSame);
 		return isSame;
 	}
+
 
 }

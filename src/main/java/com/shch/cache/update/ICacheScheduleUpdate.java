@@ -7,5 +7,5 @@ public interface ICacheScheduleUpdate { //定义缓存定时刷新逻辑接口�
     boolean IsNeedUpdated(ICacheOperation opera,Object key); //是否需要更新判断逻辑
     Object GetNewCacheResult(Object key); //提供新的缓存值
     Object GetKey();
-    //Object GetCron(); //在接口注明，替代配置文件！！
+    Object GetCron(); //在接口注明，替代配置文件！！
 }

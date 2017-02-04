@@ -38,29 +38,46 @@ public class CacheScheduleUpdateJob1 {
 		 * 2.新建定时任务管理对象：new ThreadPoolTaskScheduler
 		 * 3.在新建线程中执行cacheOperation.doput(key);代替@CachePut注解功能
 		*/
+    	//必须初始化才能使用
+    	tpts.initialize();
+    	
+		String cron=null;
+		String key=null;
 		//收集实现接口的实体类
 		for(ICacheScheduleUpdate cacheScheduleUpdate:cacheScheduleUpdates){
 			cacheScheduleUpdateMap.put((String) cacheScheduleUpdate.GetKey(), cacheScheduleUpdate);
 			logger.debug("ICacheScheduleUpdate实例的名字："+cacheScheduleUpdate.getClass());
+			key=(String) cacheScheduleUpdate.GetKey();
+			cron=(String) cacheScheduleUpdate.GetCron();
+			CacheUpdateThread cacheUpdateThread=new CacheUpdateThread();
+			
+			cacheUpdateThread.setKey(key);
+			cacheUpdateThread.setCacheScheduleUpdate(cacheScheduleUpdateMap.get(key));				
+			CronTrigger cronTrigger=new CronTrigger(cron);
+			//待考虑三：如果有多个实例，如CacheScheduleUpdate1、CacheScheduleUpdate2 ... CacheScheduleUpdateN,怎么处理？？
+			//为每一个缓存定时任务新建一个Thread类（2017.1.16）
+			//tpts.schedule(Runnable task, Trigger trigger);
+			tpts.schedule(cacheUpdateThread, cronTrigger);//启动定时任务
+			logger.debug("启动定时任务！");
+			
 		}
 		
-		String multipleCron= (String) propertyConfigurer.getPropertyValue("cron"); //property文件中的key待设计？？？？
-		Object multipleKey=propertyConfigurer.getPropertyValue("key");
-		logger.info("从配置文件读取信息：cron表达式："+multipleCron+"\t键key："+multipleKey);
-		String[] crons=null;
-		String[] keys=null;
-		if(multipleCron!=null&&multipleKey!=null){
-			 crons=stringSplitter.split(multipleCron, ",");
-			 keys=stringSplitter.split(multipleKey.toString(), ",");
-		}
-
-		String cron=null;
-		String key=null;
+//		String multipleCron= (String) propertyConfigurer.getPropertyValue("cron"); //property文件中的key待设计？？？？
+//		Object multipleKey=propertyConfigurer.getPropertyValue("key");
+//		logger.info("从配置文件读取信息：cron表达式："+multipleCron+"\t键key："+multipleKey);
+//		String[] crons=null;
+//		String[] keys=null;
+//		if(multipleCron!=null&&multipleKey!=null){
+//			 crons=stringSplitter.split(multipleCron, ",");
+//			 keys=stringSplitter.split(multipleKey.toString(), ",");
+//		}
+//
+//		String cron=null;
+//		String key=null;
 		
-		//必须初始化才能使用
-		tpts.initialize();
 		
-
+		
+/*
 		if(crons.length==keys.length){
 			logger.debug("crons的长度："+crons.length);
 			for(int i=0;i<crons.length;i++){
@@ -79,8 +96,9 @@ public class CacheScheduleUpdateJob1 {
 
 	//			CacheUpdateThread cacheUpdateThread=applicationContext.getBean(CacheUpdateThread.class);
 	//			CacheUpdateThread cacheUpdateThread=(CacheUpdateThread) applicationContext.getBean("cacheUpdateThread");
-				CacheUpdateThread cacheUpdateThread=new CacheUpdateThread();
-				
+/*		
+		        CacheUpdateThread cacheUpdateThread=new CacheUpdateThread();
+			
 				cacheUpdateThread.setKey(key);
 				cacheUpdateThread.setCacheScheduleUpdate(cacheScheduleUpdateMap.get(key));				
 				CronTrigger cronTrigger=new CronTrigger(cron);
@@ -89,11 +107,12 @@ public class CacheScheduleUpdateJob1 {
 				//tpts.schedule(Runnable task, Trigger trigger);
 				tpts.schedule(cacheUpdateThread, cronTrigger);//启动定时任务
 				logger.debug("启动定时任务！");
-			}			
+			}	
+    
 		}else{
 			logger.error("配置文件application.properties中cron表达式和key的缓存个数不一致！");
 		}
-				
+*/				
 
 		//待考虑二：线程池的使用、关闭
 		//待研究如何启动，以及线程池的配置？？？？？
