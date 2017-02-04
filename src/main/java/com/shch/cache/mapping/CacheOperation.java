@@ -3,6 +3,20 @@ package com.shch.cache.mapping;
 
 public class CacheOperation extends AbstractCacheOperation implements ICacheOperation{
 	//注意：在XML配置该类时，需要配置抽象类的cacheMapping属性
+
+	//模仿单例模式
+	//私有静态变量
+	public static ICacheOperation cacheOperation=null;
+    public CacheOperation(){
+    	cacheOperation=this;
+    }
+
+	//公有静态返回方法
+    public static ICacheOperation getObject(){
+		return cacheOperation ;    	
+    }
+	
+
 	@Override
 	public Object doGet(Object key) {
 		// TODO Auto-generated method stub

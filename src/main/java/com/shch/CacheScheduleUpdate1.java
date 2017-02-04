@@ -24,14 +24,14 @@ public class CacheScheduleUpdate1 implements ICacheScheduleUpdate{ //用户需�
 	public boolean IsNeedUpdated(ICacheOperation cacheOperation, Object key) {
 		// TODO Auto-generated method stub
 		boolean isSame=true;
-		Object obsoleteResult=cacheOperation.doGet(key);
+		Object obsoleteResult=cacheOperation.doGet(key);//旧的缓存值
 		Object newResult=GetNewCacheResult(key);
         logger.info("过时缓存值："+obsoleteResult+"  新的缓存值："+newResult);
         if(obsoleteResult!=null&&obsoleteResult.equals(newResult)){ 
         	logger.debug("obsoleteResult:"+obsoleteResult+"   newResult:"+newResult);
 			isSame=false;
 		}		
-		logger.info("是否需要更新缓存："+isSame);
+		logger.debug("是否需要更新缓存："+isSame);
 		return isSame;
 	}
 

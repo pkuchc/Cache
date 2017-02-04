@@ -46,15 +46,20 @@ public class CacheScheduleUpdateJob1 {
 		
 		String multipleCron= (String) propertyConfigurer.getPropertyValue("cron"); //property文件中的key待设计？？？？
 		Object multipleKey=propertyConfigurer.getPropertyValue("key");
-		logger.info("从配置文件读取信息：cron表达式"+multipleCron+"\t键key-"+multipleKey);
-		
-		String[] crons=stringSplitter.split(multipleCron, ",");
-		String[] keys=stringSplitter.split(multipleKey.toString(), ",");
+		logger.info("从配置文件读取信息：cron表达式："+multipleCron+"\t键key："+multipleKey);
+		String[] crons=null;
+		String[] keys=null;
+		if(multipleCron!=null&&multipleKey!=null){
+			 crons=stringSplitter.split(multipleCron, ",");
+			 keys=stringSplitter.split(multipleKey.toString(), ",");
+		}
+
 		String cron=null;
 		String key=null;
 		
 		//必须初始化才能使用
 		tpts.initialize();
+		
 
 		if(crons.length==keys.length){
 			logger.debug("crons的长度："+crons.length);
@@ -83,17 +88,17 @@ public class CacheScheduleUpdateJob1 {
 				//为每一个缓存定时任务新建一个Thread类（2017.1.16）
 				//tpts.schedule(Runnable task, Trigger trigger);
 				tpts.schedule(cacheUpdateThread, cronTrigger);//启动定时任务
-				
+				logger.debug("启动定时任务！");
 			}			
 		}else{
 			logger.error("配置文件application.properties中cron表达式和key的缓存个数不一致！");
 		}
 				
 
-		//待考虑二：线程池的使用、
+		//待考虑二：线程池的使用、关闭
 		//待研究如何启动，以及线程池的配置？？？？？
 		//tpts.schedule(Runnable task, Trigger trigger);
-				
+		//tpts.shutdown();		
 		//待考虑四：每个线程怎么结束？？		
 		
     }
