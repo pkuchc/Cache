@@ -12,7 +12,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class ShchCacheApplication {
 
 	private static Logger logger=Logger.getLogger(ShchCacheApplication.class);
-	public static ApplicationContext ctx;
 	
 	public static void main(String[] args) throws InterruptedException {
 		//SpringApplication.run(ShchCacheApplication.class, args);
@@ -21,7 +20,7 @@ public class ShchCacheApplication {
 		//ParaCacheDemo demo=(ParaCacheDemo) ctx.getBean("demo");
 		//demo.printInfo();
 		
-		 ctx=new ClassPathXmlApplicationContext("applicationContext.xml");
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("applicationContext.xml");
 
 	    //ApplicationContext ctx=SpringApplication.run(ShchCacheApplication.class, args);
 		CacheDemo cacheDemo=(CacheDemo) ctx.getBean("cacheDemo");

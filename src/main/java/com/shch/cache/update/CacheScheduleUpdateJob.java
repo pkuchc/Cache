@@ -14,12 +14,12 @@ import com.shch.ShchCacheApplication;
 import com.shch.cache.mapping.config.PropertyConfigurer;
 import com.shch.cache.support.StringSplitter;
 
-public class CacheScheduleUpdateJob1 {
+public class CacheScheduleUpdateJob {
 	@Autowired
 	public PropertyConfigurer propertyConfigurer;
 //	@Autowired
-//	public CacheUpdateThread cacheUpdateThread;	
-	private static ApplicationContext applicationContext=ShchCacheApplication.ctx;
+//	public CacheUpdateTask cacheUpdateTask;	
+
 	@Autowired
 	public StringSplitter stringSplitter;
 	private ThreadPoolTaskScheduler tpts=new ThreadPoolTaskScheduler();
@@ -30,7 +30,7 @@ public class CacheScheduleUpdateJob1 {
 	
 	public HashMap<String,ICacheScheduleUpdate> cacheScheduleUpdateMap=new HashMap<String,ICacheScheduleUpdate>();
 	
-	private static Logger logger=Logger.getLogger(CacheScheduleUpdateJob1.class);
+	private static Logger logger=Logger.getLogger(CacheScheduleUpdateJob.class);
 	
 	//@PostConstruct //Spring中容器初始化方法，等同于xml配置文件中的init-method
     public void updateCache(){
@@ -49,15 +49,15 @@ public class CacheScheduleUpdateJob1 {
 			logger.debug("ICacheScheduleUpdate实例的名字："+cacheScheduleUpdate.getClass());
 			key=(String) cacheScheduleUpdate.GetKey();
 			cron=(String) cacheScheduleUpdate.GetCron();
-			CacheUpdateThread cacheUpdateThread=new CacheUpdateThread();
+			CacheUpdateTask cacheUpdateTask=new CacheUpdateTask();
 			
-			cacheUpdateThread.setKey(key);
-			cacheUpdateThread.setCacheScheduleUpdate(cacheScheduleUpdateMap.get(key));				
+			cacheUpdateTask.setKey(key);
+			cacheUpdateTask.setCacheScheduleUpdate(cacheScheduleUpdateMap.get(key));				
 			CronTrigger cronTrigger=new CronTrigger(cron);
 			//待考虑三：如果有多个实例，如CacheScheduleUpdate1、CacheScheduleUpdate2 ... CacheScheduleUpdateN,怎么处理？？
-			//为每一个缓存定时任务新建一个Thread类（2017.1.16）
+			//为每一个缓存定时任务新建一个Task类（2017.1.16）
 			//tpts.schedule(Runnable task, Trigger trigger);
-			tpts.schedule(cacheUpdateThread, cronTrigger);//启动定时任务
+			tpts.schedule(cacheUpdateTask, cronTrigger);//启动定时任务
 			logger.debug("启动定时任务！");
 			
 		}
@@ -115,7 +115,7 @@ public class CacheScheduleUpdateJob1 {
 */				
 
 		//待考虑二：线程池的使用、关闭
-		//待研究如何启动，以及线程池的配置？？？？？
+		//待研究如何启动，以及线程池的配置？？？？？,线程池由Spring自带的ThreadPoolTaskScheduler解决
 		//tpts.schedule(Runnable task, Trigger trigger);
 		//tpts.shutdown();		
 		//待考虑四：每个线程怎么结束？？		

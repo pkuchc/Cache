@@ -31,12 +31,12 @@ public class CacheScheduleUpdate2 implements ICacheScheduleUpdate{ //用户需�
 		boolean isSame=true;
 		Object obsoleteResult=cacheOperation.doGet(key);
 		Object newResult=GetNewCacheResult(key);
-        logger.info("过时缓存值："+obsoleteResult+"  新的缓存值："+newResult);
+        logger.info("过时缓存值："+obsoleteResult+"\t新的缓存值："+newResult);
         if(obsoleteResult!=null&&obsoleteResult.equals(newResult)){ 
         	logger.debug("obsoleteResult:"+obsoleteResult+"   newResult:"+newResult);
 			isSame=false;
 		}		
-		logger.info("是否需要更新缓存："+isSame);
+		logger.debug("是否需要更新缓存："+isSame);
 		return isSame;
 	}
 
