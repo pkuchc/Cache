@@ -1,5 +1,8 @@
 package com.shch.cache.support;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class StringSplitter {
 	public String[] split(String splitObject,String splitChar){
 		String []result=null;

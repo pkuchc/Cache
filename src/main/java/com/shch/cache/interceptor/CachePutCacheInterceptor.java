@@ -5,6 +5,7 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.shch.cache.annotation.CachePut;
 import com.shch.cache.mapping.ICacheOperation;
@@ -12,6 +13,7 @@ import com.shch.cache.mapping.ICacheOperation;
 @Aspect //定义切面
 @Component//声明组件
 public class CachePutCacheInterceptor extends AbstractCacheInterceptor implements ICacheInterceptor{
+	@Autowired
 	public ICacheOperation cacheOperation;//待注入CacheOperation的Bean实例
 
 	public void setCacheOperation(ICacheOperation cacheOperation) {
@@ -38,11 +40,11 @@ public class CachePutCacheInterceptor extends AbstractCacheInterceptor implement
         logger.debug("拦截方法的注解CachePut指定缓存的key："+key);                
         result=joinPoint.proceed();//始终执行被拦截的方法，但是怎么保证执行完了，更新缓存？？
         cacheOperation.doPut(key,(Serializable)result); //将执行结果放到缓存中，待考虑，result要序列化？？
-        if(cron!=null){
-        	//加入定时任务支持逻辑
-        	
-        	
-        }
+//        if(cron!=null){
+//        	//加入定时任务支持逻辑
+//        	
+//        	
+//        }
         return result;
         
 	}

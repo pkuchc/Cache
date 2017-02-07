@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class CacheSettings {
 	@Value("#{config.stock}") //注入配置文件的值
 	public String stock;

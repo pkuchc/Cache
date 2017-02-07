@@ -8,12 +8,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.scheduling.support.CronTrigger;
+import org.springframework.stereotype.Component;
 
 import com.shch.CacheScheduleUpdate1;
 import com.shch.ShchCacheApplication;
 import com.shch.cache.mapping.config.PropertyConfigurer;
 import com.shch.cache.support.StringSplitter;
 
+@Component
 public class CacheScheduleUpdateJob {
 	@Autowired
 	public PropertyConfigurer propertyConfigurer;
@@ -32,7 +34,7 @@ public class CacheScheduleUpdateJob {
 	
 	private static Logger logger=Logger.getLogger(CacheScheduleUpdateJob.class);
 	
-	//@PostConstruct //Spring中容器初始化方法，等同于xml配置文件中的init-method
+	@PostConstruct //Spring中容器初始化方法，等同于xml配置文件中的init-method
     public void updateCache(){
     	/*1.从property配置文件读取cron和key信息
 		 * 2.新建定时任务管理对象：new ThreadPoolTaskScheduler

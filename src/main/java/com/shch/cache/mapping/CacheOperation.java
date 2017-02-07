@@ -1,13 +1,18 @@
 package com.shch.cache.mapping;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CacheOperation extends AbstractCacheOperation implements ICacheOperation{
 	//注意：在XML配置该类时，需要配置抽象类的cacheMapping属性
+//	@Autowired
+//	public CacheMapping cacheMapping; //待XML注入实例Bean
 
 	//模仿单例模式
 	//私有静态变量
 	public static ICacheOperation cacheOperation=null;
-    public CacheOperation(){
+    public CacheOperation(){//通过构造方法传入CacheOperation对象本身，该对象只有单个实例
     	cacheOperation=this;
     }
 
