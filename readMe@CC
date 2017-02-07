@@ -1,4 +1,11 @@
-（一）纯Spring框架，没有用Spring Boot的自动装配等高级功能，Bean之间的连接用纯XML配置
+（一）纯Spring框架，没有用Spring Boot的自动装配等高级功能，Bean之间的连接用纯XML配置——使用@Autowired注解连接
 （二）配置文件application.properties的读取有两种方式：
      1.纯File文件读取方式，有ReadProperty类实现；
      2.利用Spring框架@Value注解读取配置文件，并生成一个实体对象类，由CacheSetting类实现
+     
+     
+**********************重点：该缓存框架的使用方法@CC**************************
+参考com.shch包下的测试例子
+用户使用该缓存框架，只需要做两件事：1.实现ICacheScheduleUpdate接口，该接口可以有多个实例，每一个实例可以自定义更新策略
+                             cron表达式，可以完成缓存的定时刷新功能
+                           2.编写使用缓存的类Demo，采用缓存注解(@Cacheable@CachePut@CacheEvict)即可 
