@@ -7,16 +7,21 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.concurrent.ConcurrentHashMap;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.shch.cache.Cache;
 import com.shch.cache.CacheManager;
 import com.shch.cache.mapping.config.CacheSettings;
 import com.shch.cache.mapping.config.PropertyConfigurer;
 import com.shch.cache.support.CompositeCacheManager;
-
+@Component
 public class CacheMapping {
     //public ReadProperty readProp; //该属性Bean待注入
     //public CacheSettings cacheSettings;
+	@Autowired
     public PropertyConfigurer propertyConfigurer;
+	@Autowired
     public CompositeCacheManager compCacheManager; //待在Xml中配置或用自动注入，然后comCacheManager Bean的配置中，要配置多个实现了CacheManager的其他Bean
     private String cacheName=null;//暂时只实现三种：CurrentHashMap、redis和Memcached
     private static Logger logger=Logger.getLogger(CacheMapping.class);

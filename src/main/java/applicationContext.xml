@@ -12,20 +12,25 @@
     <!--AOP切面拦截 -->
     <aop:aspectj-autoproxy proxy-target-class="true"/>
     <context:annotation-config/>
+    <!-- 指定扫描特定的多个包 -->
+   <!--  <context:component-scan base-package="com.shch.cache.interceptor,com.shch.cache.mapping"/> -->
+    <context:component-scan base-package="com.shch.cache"/>
     
-    <bean id="cacheableCacheInterceptor" class="com.shch.cache.interceptor.CacheableCacheInterceptor">
+    
+<!--     <bean id="cacheableCacheInterceptor" class="com.shch.cache.interceptor.CacheableCacheInterceptor">
         <property name="cacheOperation" ref="cacheOperation"></property>
-    </bean>
+    </bean> 
     <bean id="cachePutCacheInterceptor" class="com.shch.cache.interceptor.CachePutCacheInterceptor">
         <property name="cacheOperation" ref="cacheOperation"></property>
     </bean>
     <bean id="cacheEvictCacheInterceptor" class="com.shch.cache.interceptor.CacheEvictCacheInterceptor">
         <property name="cacheOperation" ref="cacheOperation"></property>
     </bean>
+-->
          
-     <bean id="cacheOperation" class="com.shch.cache.mapping.CacheOperation">
+<!--      <bean id="cacheOperation" class="com.shch.cache.mapping.CacheOperation">
        <property name="cacheMapping" ref="cacheMapping"></property>
-    </bean> 
+    </bean>  -->
      
     <bean id="compositeCacheManager" class="com.shch.cache.support.CompositeCacheManager" init-method="loadCache">
        <property name="cacheManagers">
@@ -51,10 +56,10 @@
        </property>         
    </bean>
     
-	<bean id="cacheMapping" class="com.shch.cache.mapping.CacheMapping" >
+<!-- 	<bean id="cacheMapping" class="com.shch.cache.mapping.CacheMapping" >
        <property name="propertyConfigurer" ref="propertyConfigurer"></property>
 	   <property name="compCacheManager" ref="compositeCacheManager"></property>
-	</bean>
+	</bean> -->
 
   	<bean id="propertyConfigurer" class="com.shch.cache.mapping.config.PropertyConfigurer">
   	   <property name="locations">
@@ -64,11 +69,14 @@
   	   </list>
   	   </property>
   	</bean>
+  	
     <!--初始化方法init-method -->
-    <bean id="cacheScheduleUpdateJob" class="com.shch.cache.update.CacheScheduleUpdateJob" init-method="updateCache"></bean>
-    <bean id="stringSplitter" class="com.shch.cache.support.StringSplitter"></bean>
+ <!--    <bean id="cacheScheduleUpdateJob" class="com.shch.cache.update.CacheScheduleUpdateJob" init-method="updateCache"></bean>
+    <bean id="stringSplitter" class="com.shch.cache.support.StringSplitter"></bean> -->
   
     <!-- *************************以上为缓存框架定义*********************************** -->
+    <!-- *************用户使用该缓存框架，只需要做两件事：1.实现ICacheScheduleUpdate接口，可以完成缓存的定时刷新功能
+                                                 2.编写使用缓存的类Demo，采用缓存注解即可 -->
     
     <!-- 需要用户定义 -->
     <!-- 注解缓存的使用类 -->

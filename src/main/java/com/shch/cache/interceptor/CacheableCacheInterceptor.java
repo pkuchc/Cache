@@ -6,18 +6,21 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.shch.cache.annotation.Cacheable;
+import com.shch.cache.mapping.CacheOperation;
 import com.shch.cache.mapping.ICacheOperation;
 
 @Aspect //定义切面
 @Component//声明组件
 public class CacheableCacheInterceptor extends AbstractCacheInterceptor implements ICacheInterceptor{
+	@Autowired
 	public ICacheOperation cacheOperation;//待注入CacheOperation的Bean实例
 
-	public void setCacheOperation(ICacheOperation cacheOperation) {
-		this.cacheOperation = cacheOperation;
-	}
+//	public void setCacheOperation(ICacheOperation cacheOperation) {
+//		this.cacheOperation = cacheOperation;
+//	}
 
 	@Override
 	@Pointcut("@annotation(com.shch.cache.annotation.Cacheable)")
